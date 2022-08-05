@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import HacerPregunta from './componentes/Preguntas';
 import './App.css';
 import Contador from './componentes/Puntuacion';
+import './hoja-de-estilo/Preguntas.css'
 
 
 
