@@ -1,34 +1,34 @@
 import React,{useState} from 'react';
 import HacerPregunta from './componentes/Preguntas';
-import './App.css';
 import Contador from './componentes/Puntuacion';
 import './hoja-de-estilo/Preguntas.css'
+import './App.css';
 
 
 
 const Trivia=[{
-      pregunta:"Qué es lo que dice Gandalf cuando se enfrenta a un Balrog (demonio gigante de fuego)",
+      pregunta:"¿Qué es lo que dice Gandalf cuando se enfrenta a un Balrog? (demonio gigante de fuego)",
       respuesta1:"No pasarás",
       respuesta2:"Ahí les voy",
       respuesta3:"Primero los ancianos",
       respuestaCorrecta:"No pasarás"
     },
     {
-      pregunta:"Cual de estas acciones dañaría a un no-muerto (zombies, vampiros, espectros, entre otros)",
+      pregunta:"¿Cual de estas acciones dañaría a un no-muerto? (zombies, vampiros, espectros, entre otros)",
       respuesta1:"Sanarlo",
       respuesta2:"Alimentarlo",
       respuesta3:"Bailar",
       respuestaCorrecta:"No pasarás"
     },
     {
-      pregunta:"Cual es el hechizo que Harry Potter usa para protegerse de los dementores (espectros oscuros)",
+      pregunta:"¿Cual es el hechizo que Harry Potter usa para protegerse de los dementores? (espectros oscuros)",
       respuesta1:"Avada-kedavra",
       respuesta2:"Shazam",
       respuesta3:"Expecto-patronum",
       respuestaCorrecta:"Expecto-patronum"
     },
     {
-      pregunta:"Que es lo que encuentra Bilbo Bolson en la cueva de Gollum",
+      pregunta:"¿Qué es lo que encuentra Bilbo Bolson en la cueva de Gollum?",
       respuesta1:"Una daga",
       respuesta2:"Un mate",
       respuesta3:"Un anillo",
@@ -62,10 +62,11 @@ function App() {
         <h2>Presta atención,estas preguntas están relacionadas con mundos fantásticos 
             como Harry Potter, El señor de los anillos y Warhammer</h2>
         
-        { //Con esto recorri los elementos de array de la trivia
+        { //Con map recorri los elementos de array de la trivia
           Trivia.map(function(trivia)
             { 
-              return <HacerPregunta pregunta={trivia.pregunta} opcion1={trivia.respuesta1} opcion2={trivia.respuesta2} opcion3={trivia.respuesta3} eventoClic={validador}
+              return <HacerPregunta pregunta={trivia.pregunta} opcion1={trivia.respuesta1} 
+              opcion2={trivia.respuesta2} opcion3={trivia.respuesta3} eventoClic={validador}
           />}
         )}
 

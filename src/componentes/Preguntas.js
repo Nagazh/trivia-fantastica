@@ -8,7 +8,7 @@ function HacerPregunta(props){
         <div className="preguntas">
         <h3>{props.pregunta}</h3>
 
-        <button className="respuesta" onClick={props.eventoClic}>{props.opcion1}</button>
+        <button onClick={props.eventoClic}>{props.opcion1}</button>
 
         <button onClick={props.eventoClic}>{props.opcion2}</button>
 
