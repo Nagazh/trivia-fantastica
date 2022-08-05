@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-color: rgba(192, 201, 209, 0.555);
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 50px;
+}
+html{
+  background-image: url('imagenes/fondo.jpg');
+  
+}

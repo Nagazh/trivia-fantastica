@@ -1,0 +1,29 @@
+.preguntas{
+    background-color: rgb(32, 151, 67);
+    height: 115px;
+    max-width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    border-radius: 25px;
+}
+button{
+    font-weight: bold;
+    font-size: 14px;
+    height: 25px;
+    width: 150px;
+    background-color: rgb(137, 190, 137);
+    border: 0;
+    margin:5px
+
+}
+button:hover{
+    
+    background-color: rgb(144, 68, 214);
+    border-radius: 50px;
+    
+}
+h3{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
